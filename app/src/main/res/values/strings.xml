@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Sun-Pulse</string>
+    <string name="discover_the_weather_in_your_city_and_plan_your_day_correctly">Discover the weather in your\n city and plan your day\n correctly</string>
+    <string name="sun_pulse">Sun Pulse</string>
 </resources>
