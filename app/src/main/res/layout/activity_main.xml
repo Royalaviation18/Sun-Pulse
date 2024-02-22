@@ -7,9 +7,173 @@
     tools:context=".MainActivity">
 
     <SearchView
+        android:id="@+id/svCityName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="20dp"/>
+        android:layout_margin="20dp"
+        android:searchIcon="@drawable/location_search"
+        android:queryHint="Bengaluru"
+        android:iconifiedByDefault="false"
+        android:background="@drawable/search_view_shape"
+        />
+    
+    <TextView
+        android:id="@+id/tvCityName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/svCityName"
+        android:hint="City Name"
+        android:textSize="18sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/tvToday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/svCityName"
+        android:layout_alignParentRight="true"
+        android:text="Today"
+        android:textSize="18sp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvToday"
+        android:hint="22nd March 2001"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        android:textSize="18sp"/>
+    s
+    <TextView
+        android:id="@+id/tvDay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvDate"
+        android:layout_alignParentRight="true"
+        android:textSize="18sp"
+        android:hint="Tuesday"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"/>
+
+
+    <TextView
+        android:id="@+id/tvWeatherCondition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvCityName"
+        android:textSize="20sp"
+        android:hint="Sunny"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/tvTemperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvWeatherCondition"
+        android:hint="0.0 ℃"
+        android:textSize="18sp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"/>
+
+    <ImageView
+        android:id="@+id/ivIcon"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@id/tvWeatherCondition"
+        android:src="@drawable/sunny_weather"
+       />
+
+    <TextView
+        android:id="@+id/tvMin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ivIcon"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="90dp"
+        android:hint="Min Temp"
+        android:layout_marginTop="35dp"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/tvMax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ivIcon"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="90dp"
+        android:hint="Max Temp"
+        android:layout_marginTop="35dp"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/tvHumidity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvMin"
+        android:hint="Humidity"
+        android:textSize="18sp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/tvWindSpeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvMin"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/tvHumidity"
+        android:hint="Wind Speed"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tvRain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Rain Conditions"
+        android:layout_below="@id/tvMin"
+        android:layout_toRightOf="@id/tvWindSpeed"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:id="@+id/tvSunrise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvHumidity"
+        android:hint="Sunrise"
+        android:textSize="18sp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/tvSunset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvWindSpeed"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/tvSunrise"
+        android:hint="Sunset"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tvSea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Sea"
+        android:layout_below="@id/tvRain"
+        android:layout_toRightOf="@id/tvSunset"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        android:layout_marginLeft="80dp"/>
 
 
 </RelativeLayout>
